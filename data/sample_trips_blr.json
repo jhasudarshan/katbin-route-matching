@@ -1,0 +1,65 @@
+[
+  {
+    "pickup_lat": 12.9716,
+    "pickup_lng": 77.5946,
+    "drop_lat": 12.9352,
+    "drop_lng": 77.6245,
+    "departure_time": "2025-09-06T09:00:00Z"
+  },
+  {
+    "pickup_lat": 12.9720,
+    "pickup_lng": 77.5950,
+    "drop_lat": 12.9360,
+    "drop_lng": 77.6250,
+    "departure_time": "2025-09-06T09:10:00Z"
+  },
+  {
+    "pickup_lat": 12.9700,
+    "pickup_lng": 77.5920,
+    "drop_lat": 12.9380,
+    "drop_lng": 77.6270,
+    "departure_time": "2025-09-06T09:15:00Z"
+  },
+  {
+    "pickup_lat": 12.9730,
+    "pickup_lng": 77.5960,
+    "drop_lat": 12.9370,
+    "drop_lng": 77.6820,
+    "departure_time": "2025-09-06T09:25:00Z"
+  },
+  {
+    "pickup_lat": 12.9800,
+    "pickup_lng": 77.6000,
+    "drop_lat": 12.9500,
+    "drop_lng": 77.6400,
+    "departure_time": "2025-09-06T08:30:00Z"
+  },
+  {
+    "pickup_lat": 12.9810,
+    "pickup_lng": 77.6010,
+    "drop_lat": 12.9510,
+    "drop_lng": 77.6410,
+    "departure_time": "2025-09-06T08:40:00Z"
+  },
+  {
+    "pickup_lat": 12.9820,
+    "pickup_lng": 77.6020,
+    "drop_lat": 12.9520,
+    "drop_lng": 77.6420,
+    "departure_time": "2025-09-06T08:50:00Z"
+  },
+  {
+    "pickup_lat": 12.9830,
+    "pickup_lng": 77.6030,
+    "drop_lat": 12.9530,
+    "drop_lng": 77.6430,
+    "departure_time": "2025-09-06T10:00:00Z"
+  },
+  {
+    "pickup_lat": 12.9600,
+    "pickup_lng": 77.6100,
+    "drop_lat": 12.9400,
+    "drop_lng": 77.6300,
+    "departure_time": "2025-09-06T10:05:00Z"
+  }
+]

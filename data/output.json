@@ -1,0 +1,62 @@
+[
+  {
+    "baseTripId": "68bc725c3498dcb888be43b8",
+    "matches": []
+  },
+  {
+    "baseTripId": "68bc725b3498dcb888be43b6",
+    "matches": [
+      {
+        "matchedTripId": "68bc725a3498dcb888be43b4",
+        "overlapPercentage": 33.33,
+        "additionalDistanceM": 963,
+        "additionalTimeS": 80,
+        "deviationPercentage": 12.79,
+        "timeDeltaMinutes": 5,
+        "matchScore": 68
+      }
+    ]
+  },
+  {
+    "baseTripId": "68bc725a3498dcb888be43b4",
+    "matches": [
+      {
+        "matchedTripId": "68bc725b3498dcb888be43b6",
+        "overlapPercentage": 33.33,
+        "additionalDistanceM": 1090,
+        "additionalTimeS": 91,
+        "deviationPercentage": 14.47,
+        "timeDeltaMinutes": 5,
+        "matchScore": 58
+      }
+    ]
+  },
+  {
+    "baseTripId": "68bc72593498dcb888be43b2",
+    "matches": [
+      {
+        "matchedTripId": "68bc72583498dcb888be43b0",
+        "overlapPercentage": 83.33,
+        "additionalDistanceM": 393,
+        "additionalTimeS": 33,
+        "deviationPercentage": 5.67,
+        "timeDeltaMinutes": 10,
+        "matchScore": 136
+      }
+    ]
+  },
+  {
+    "baseTripId": "68bc72583498dcb888be43b0",
+    "matches": [
+      {
+        "matchedTripId": "68bc72593498dcb888be43b2",
+        "overlapPercentage": 83.33,
+        "additionalDistanceM": 401,
+        "additionalTimeS": 33,
+        "deviationPercentage": 5.77,
+        "timeDeltaMinutes": 10,
+        "matchScore": 135
+      }
+    ]
+  }
+]

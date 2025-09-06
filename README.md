@@ -1,4 +1,3 @@
-````markdown
 # Route Matching Backend (Node.js + MongoDB + Upstash)
 
 A backend service that matches riders using **route geometry** (via OSRM) and **time overlap**.  
@@ -104,5 +103,3 @@ Request:
 * Dry run with Bengaluru trips (sample JSON output : `./data/output.json`)
 
 ---
-
-```

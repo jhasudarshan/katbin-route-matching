@@ -1,3 +1,5 @@
+//converts the compressed polyline string
+//into an array of latitude/longitude coordinates
 export function decodePolyline(str) {
   let index = 0, lat = 0, lng = 0;
   const coordinates = [];

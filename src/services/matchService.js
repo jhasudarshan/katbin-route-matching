@@ -38,7 +38,12 @@ export async function findMatchesForTrip(base, candidates) {
       continue;
     }
 
-    // scoring weights
+    // scoring weights:
+    //  {
+        // Overlap (0.6 weight): More shared route = higher efficiency.
+        // Deviation penalty: Higher deviation % lowers score.
+        // Time delta penalty: Bigger pickup time difference lowers score. 
+    //}
     const scoreOverlap = overlap * 0.6;
     const scoreDeviation = Math.max(0, 100 - deviationPct * 6); 
     const scoreTime = Math.max(0, (TIME_WINDOW_MIN - deltaMin) * 1.0);
@@ -71,6 +76,8 @@ export async function findMatchesForTrip(base, candidates) {
   return results;
 }
 
+//estimates the additional distance one rider’s trip would take 
+// if we insert another rider’s pickup/drop into it
 function approximateExtraDistance(a, b) {
   const A = [a.pickupLat, a.pickupLng];
   const A2 = [a.dropLat, a.dropLng];

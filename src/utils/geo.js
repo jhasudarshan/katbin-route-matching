@@ -3,6 +3,9 @@ const R = 6371000;
 
 function toRad(x) { return (x * Math.PI) / 180; }
 
+//Haversine formula calculates the great-circle distance between 
+// two coordinates, which is accurate enough for real-world 
+// trip distance comparisons.
 export function haversineM(a, b) {
   const dLat = toRad(b[0] - a[0]);
   const dLng = toRad(b[1] - a[1]);
@@ -12,14 +15,18 @@ export function haversineM(a, b) {
   return 2 * R * Math.asin(Math.sqrt(h));
 }
 
+// calculates the total trip distance by summing Haversine 
+// distances between consecutive route points
 export function pathLengthM(points) {
   let s = 0;
   for (let i = 1; i < points.length; i++) s += haversineM(points[i - 1], points[i]);
   return s;
 }
 
-// resample roughly every stepM meters along segments
-export function resample(points, stepM = 200) {
+
+//Resampling ensures points every ~200–250 meters.
+//makes overlap % fair and consistent, avoiding bias due to polyline resolution.
+export function resample(points, stepM) {
   if (!points || points.length < 2) return points || [];
   const out = [points[0]];
   let acc = 0;
@@ -41,6 +48,7 @@ export function resample(points, stepM = 200) {
 }
 
 // overlap %: symmetric average of fraction of points within tolM
+//High overlap % = trips share more path → good pooling candidate
 export function overlapPercent(aPoints, bPoints, tolM = 150) {
   const A = resample(aPoints, 250);
   const B = resample(bPoints, 250);

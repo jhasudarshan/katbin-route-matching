@@ -42,6 +42,11 @@ export async function getMatches(req, res) {
     if (!base) return res.status(404).json({ error: 'Trip not found' });
 
     const candidates = await Trip.find({ _id: { $ne: base._id } });
+    //to improve performance we can add the cache layer to
+    //filter the candidate by storing the ongoing trips
+    //into the cache, because those trips are only relevant
+    //to match the trip
+    
     const results = await findMatchesForTrip(base, candidates);
     res.json({ tripId: base._id, matches: results });
   } catch (e) {
